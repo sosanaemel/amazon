@@ -1,0 +1,174 @@
+<!DOCTYPE html> <!-- تعريف نوع المستند -->
+<html lang="ar" dir="rtl"> <!-- بداية صفحة HTML بلغة عربية واتجاه من اليمين لليسار -->
+<head>
+    <meta charset="UTF-8"> <!-- تحديد ترميز الأحرف -->
+    <title>Amazon</title> <!-- عنوان الصفحة اللي بيظهر في التبويب -->
+    <style>
+    /* تنسيق الحاوية التي تحتوي على الصور */
+    .images-wrapper {
+        display: flex; /* عرض مرن للصور */
+        flex-wrap: wrap; /* السماح بانتقال الصور لسطر جديد عند الحاجة */
+        justify-content: space-between; /* توزيع الصور بالتساوي مع فراغات */
+        padding: 20px; /* مسافة داخلية حول الحاوية */
+    }
+
+    /* تنسيق الحاويات التي تحتوي على كل صورة */
+    .image-container {
+        width: 23%;  /* عرض كل صورة حوالي ربع عرض السطر */
+        margin-bottom: 20px; /* مسافة من تحت الصورة */
+        overflow: hidden; /* إخفاء أي محتوى خارج الإطار */
+        border-radius: 10px; /* تدوير حواف الصورة */
+    }
+
+    /* تنسيق الصور لجعلها تملأ الحاوية */
+    .image-container img {
+        width: 100%;  /* عرض الصورة يملأ الحاوية */
+        height: 200px;  /* ارتفاع ثابت للصورة */
+        object-fit: contain; /* الحفاظ على أبعاد الصورة بدون قص */
+    
+    }
+    /* أسلوب الصورة */
+    .image-container {
+            text-align: center; /* محاذاة النص في منتصف الحاوية */
+            position: relative; /* تحديد وضع العنصر بالنسبة لمحتواه */
+            display: inline-block; /* عرض العنصر ككتلة داخلية */
+            cursor: pointer; /* تغيير شكل الماوس عند المرور */
+            transition: transform 0.3s ease; /* تأثير حركة عند التكبير */
+        }
+
+        /* عند المرور على الصورة */
+        .image-container:hover img {
+            transform: scale(1.1); /* تكبير الصورة بنسبة بسيطة عند المرور */
+        }
+
+        /* عند المرور على الصورة لتغيير النص */
+        .image-container:hover p {
+            color: #fff; /* تغيير لون النص إلى أبيض عند المرور */
+        }
+
+        /* النص فوق الصورة */
+        .image-container p {
+            color: #B26B6D; /* لون النص */
+            font-weight: bold; /* جعل الخط عريض */
+            margin: 10px 0; /* مسافة فوق وتحت النص */
+            transition: color 0.3s ease; /* تأثير انسيابي لتغيير اللون */
+        }
+
+        body {
+            background-image: url('./download.jpeg'); /* تحديد صورة الخلفية */
+            background-repeat: no-repeat; /* منع تكرار الخلفية */
+            background-size: cover; /* تغطية الشاشة بالكامل */
+            background-position: center; /* تمركز الخلفية في النص */
+            margin: 0; /* إزالة الهوامش */
+            padding: 0; /* إزالة المسافات الداخلية */
+        }
+
+</style>
+</head>
+<body>
+
+<!-- الهيدر -->
+<table width="100%" style="background-color: #B26B6D; height: 100px;"> <!-- جدول عرض كامل للخلفية العلوية -->
+    <tr>
+        <td align="center" style="vertical-align: middle;"> <!-- خلية واحدة في المنتصف -->
+            <h1 style="color: white;">Amazon 🛒</h1> <!-- عنوان الموقع -->
+        </td>
+    </tr>
+    <tr>
+        <table> <!-- جدول داخلي (ملاحظة: غير صحيح في HTML الحديث) -->
+            <table width="100%" style="background-color: #B26B6D; height: 50px;"> <!-- شريط نصي تحتي -->
+        <td align="center">
+            <p style="color: rgb(255, 243, 243); font-size: 20px; margin: 10px 0;">
+                <i><strong>All You Need Is Here ✨</strong></i> <!-- جملة تعريفية تسويقية -->
+            </p>
+        </td>
+    </tr>
+</table>
+
+<br> <!-- سطر فارغ -->
+</div>
+<!-- الصور -->
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; padding: 20px;"> <!-- حاوية الصور الرئيسية -->
+    
+    <!-- الصورة الأولى -->
+    <div class="image-container" style="width: 22%; margin-bottom: 20px;"> <!-- حاوية لصورة واحدة -->
+        <a href="blusher.html"> <!--  هتفتح ف نفس الصفحة رابط عند الضغط على الصورةنيtarget="_blank"  هتظهر ف صفحة تاني لو حطيت كدا-->
+            <p >Blusher</p> <!-- اسم المنتج -->
+            <img src="./blusher.jpg" alt="blusher" style="width: 100%; border-radius: 10px;"> <!-- صورة المنتج -->
+        </a>
+    </div>
+    
+    <!-- الصورة الثانية -->
+    <div class="image-container" style="width: 22%; margin-bottom: 20px;">
+        <a href="lib gilas.html">
+            <p>Lib Gilas</p>
+            <img src="./lib gilas.jpg" alt="lib gilas" style="width: 100%; border-radius: 10px;">
+        </a>
+    </div>
+
+    <!-- الصورة الثالثة -->
+    <div class="image-container" style="width: 22%; margin-bottom: 20px;">
+        <a href="perfume.html">
+            <p>Perfum</p>
+            <img src="./perfume.jpg" alt="perfume" style="width: 100%; border-radius: 10px;">
+        </a>
+    </div>
+
+    <!-- الصورة الرابعة -->
+    <div class="image-container" style="width: 22%; margin-bottom: 20px;">
+        <a href="sun block.html">
+            <p >Sun Block</p>
+            <img src="./sun block.jpg" alt="sun block" style="width: 100%; border-radius: 10px;">
+        </a>
+    </div>
+
+    <!-- الصورة الخامسة -->
+    <div class="image-container" style="width: 22%; margin-bottom: 20px;">
+        <a href="earphone.html">
+            <p >Earphone</p>
+            <img src="./earphone.jpg" alt="earphone" style="width: 100%; border-radius: 10px;">
+        </a>
+    </div>
+    
+    <!-- الصورة السادسة -->
+    <div class="image-container" style="width: 22%; margin-bottom: 20px;">
+        <a href="laptop.html">
+            <p >Laptop</p>
+            <img src="./laptop.jpg" alt="laptop" style="width: 100%; border-radius: 10px;">
+        </a>
+    </div>
+
+    <!-- الصورة السابعة -->
+    <div class="image-container" style="width: 22%; margin-bottom: 20px;">
+        <a href="Samsung.html" >
+            <p >Phone</p>
+            <img src="Samsung.jpg" alt="Samsung" style="width: 100%; border-radius: 10px;">
+        </a>
+    </div>
+
+    <!-- الصورة الثامنة -->
+    <div class="image-container" style="width: 22%; margin-bottom: 20px;">
+        <a href="tv.html" >
+            <p >Tv</p>
+            <img src="./tv.jpg" alt="tv" style="width: 100%; border-radius: 10px;">
+        </a>
+    </div>
+
+</div>
+
+<br><br> <!-- مسافة بين الصور والفوتر -->
+
+<!-- الفوتر -->
+<table width="100%" style="background-color: #B26B6D; height: 150px;"> <!-- الفوتر السفلي -->
+    <tr>
+        <td align="center" style="vertical-align: middle;"> <!-- محتوى الفوتر في المنتصف -->
+            <p style="color: white; font-size: 20px; margin: 5px 0; font-weight: bold;">Contact Us 📞</p> <!-- نص للتواصل -->
+            <p style="color: white; font-size: 16px; margin: 5px 0; font-weight: bold;"> Free Delivery 🚚</p> <!-- نص عن التوصيل المجاني -->
+            <p style="color: white; font-size: 16px; margin: 5px 0; font-weight: bold;"> BY EN/ SOSANA EMEL 👩🏻‍💻</p>
+        </td>
+
+    </tr>
+</table>
+
+</body>
+</html>
